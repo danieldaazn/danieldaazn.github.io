@@ -2,6 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio | Light Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #ffffff; color: #1e293b; }
+        .bg-glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="p-6 flex justify-between items-center sticky top-0 bg-glass border-b border-slate-100 z-50">
+        <div class="text-xl font-bold tracking-tight text-sky-600">DN<span class="text-slate-800">.eng</span></div>
+        <div class="space-x-8 text-sm font-semibold uppercase tracking-wider">
+            <a href="#projects" class="text-slate-600 hover:text-sky-600 transition">Projects</a>
+            <a href="#skills" class="text-slate-600 hover:text-sky-600 transition">Tech Stack</a>
+            <a href="#contact" class="px-5 py-2.5 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition shadow-md shadow-sky-200">Contact</a>
+        </div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 py-32 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 text-slate-900 leading-tight">
+            Computer <span class="text-sky-500">Engineer.</span>
+        </h1>
+        <p class="text-xl text-slate-500 max-w-2xl leading-relaxed">
+            Developing high-performance embedded systems and robotic architectures. 
+            Focused on the intersection of firmware efficiency and precise hardware integration.
+        </p>
+    </header>
+
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-slate-900">Featured Work</h2>
+            <div class="h-px flex-1 bg-slate-200"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            <div class="group bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-sky-100 hover:border-sky-200 transition-all duration-300">
+                <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-800">Autonomous Micromouse</h3>
+                <p class="text-slate-500 mb-6 leading-relaxed">Hardware implementation and maze-solving logic using IR sensing and PID control for rapid navigation.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold">
+                    <span class="bg-sky-50 text-sky-700 px-3 py-1 rounded-full border border-sky-100">STM32</span>
+                    <span class="bg-sky-50 text-sky-700 px-3 py-1 rounded-full border border-sky-100">Control Systems</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-sky-100 hover:border-sky-200 transition-all duration-300">
+                <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-800">Anteater Chess Variant</h3>
+                <p class="text-slate-500 mb-6 leading-relaxed">Developing a 10x10 chess logic engine in C with modular architecture and optimized move validation.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold">
+                    <span class="bg-sky-50 text-sky-700 px-3 py-1 rounded-full border border-sky-100">C Programming</span>
+                    <span class="bg-sky-50 text-sky-700 px-3 py-1 rounded-full border border-sky-100">Data Structures</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="bg-slate-50 border-y border-slate-200 py-24 my-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div>
+                    <h4 class="text-sky-600 font-bold uppercase tracking-widest text-sm mb-4">Embedded</h4>
+                    <p class="text-slate-700">STM32 Ecosystem, Interrupts, HAL, Real-Time Hardware Control.</p>
+                </div>
+                <div>
+                    <h4 class="text-sky-600 font-bold uppercase tracking-widest text-sm mb-4">Software</h4>
+                    <p class="text-slate-700">Modular C, Python (Multiprocessing), Git, Linux Environment.</p>
+                </div>
+                <div>
+                    <h4 class="text-sky-600 font-bold uppercase tracking-widest text-sm mb-4">Laboratory</h4>
+                    <p class="text-slate-700">PCB Prototyping, Circuit Analysis, Signal Processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="max-w-2xl mx-auto px-6 py-32 text-center">
+        <h2 class="text-4xl font-black mb-6 text-slate-900">Let's talk hardware.</h2>
+        <p class="text-lg text-slate-500 mb-10">Currently seeking research opportunities in bioelectronics and embedded system design.</p>
+        <a href="mailto:your.email@uci.edu" class="inline-block px-10 py-5 bg-slate-900 text-white font-bold rounded-xl hover:bg-sky-500 transition-all shadow-xl shadow-slate-200">Get In Touch</a>
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
